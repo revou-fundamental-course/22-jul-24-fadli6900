@@ -1,30 +1,9 @@
 /*ini css*/
+
 *, html, body {
-    margin 0;
-    padding 0;
-    font font-family:"Roboto", sans-serif;
-}
-
-@import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
-@import url("https://fonts.cdnfonts.com/css/poppins");
-
-.banner {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-}
-.banner .slider {
-  position: absolute;
-  width: 200px;
-  height: 250px;
-  top: 10%;
-  left: calc(50% - 100px);
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-  animation: autoRun 20s linear infinite;
-  z-index: 2;
+  margin 0;
+  padding 0;
+  font font-family:"Roboto", sans-serif;
 }
 
 .wrapper {
@@ -103,162 +82,148 @@
     color:white !important;
 }
 
-/* Gaya umum untuk semua perangkat */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
 header {
-  background-color:crimson;
-  color: #fff;
+  background-color:black;
+  color: crimson;
   padding: 10px 0;
   text-align: center;
-}
-
-.content {
-  text-align: center;
-  padding: 20px;
-}
-
-.content p {
-  font-size: 20px;
-  color: black;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
 }
 
 main {
   padding: 20px;
 }
 
-/* Media Query untuk tablet */
-@media (max-width: 1024px) {
-  .container {
-    width: 90%;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
+.main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 20px 0;
 }
 
-/* Media Query untuk mobile */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-
-    nav ul {
-      text-align: center;
-    }
-
-    nav ul li {
-      display: block;
-      margin: 5px 0;
-    }
-
-    main {
-      padding: 10px;
-    }
-  }
-
-.nav-container {
-display: flex;
+.main-asset img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.nav-item {
-    border: 1px solid;
-    padding: 8px;
-    }
+.main-quote {
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-style: italic;
+    color: black;
+}
 
-    .main-title { 
-        text-align: center;
-    }
-    
-    .main-content {
+.main-author {
     display: flex;
-    }
+    align-items: center;
+    flex-direction: column;
+}
 
-.main-content-items {
-        border: 1px solid;
-        width: 100%;
-        height:250px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .main-content-banner{
-        border: 1px solid;
-        width: 100%;
-        height:150px;
-        background-image: none;
-    }
+.author-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 
-    .item-icon{
-        border: 1px solid;
-        width: 25%;
-        height:25px;
-        background-image: none;
-        border-radius: 50;
-    }
+.features {
+    text-align: left;
+}
 
-    .main item{
-        display:flex ;
-        align-items: center;
-        justify-content: center;
-    }
+.features p {
+    margin-bottom: 20px;
+}
 
-    input {
-        width: 75%;
-        padding:12px 20px;
-        margin: 8px 0;
-        display:inline-block;
-        border: 1px solid;
-        border-radius: 4px;
-        box-sizing:border-box;
-        font-family:monospace;
-    }
+.features ol {
+    padding-left: 20px;
+}
 
-    button{
-        width: 75%;
-        height: 32px;
-        background-color:whitesmoke;
-        border: none;
+.features li {
+    margin-bottom: 10px;
+    list-style-type: decimal;
+}
 
-    }
+header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.package {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 30%;
+  max-width: 30%;
+  text-align: center;
+}
+
+.package h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.package p {
+  color: #666;
+}
+
+.closing-argument {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-top: 1px solid #eaeff5;
+}
+
+.closing-argument h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.closing-argument p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.closing-argument button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #eaeff5;
+}
+
+footer p {
+  margin: 5px 0;
+}
