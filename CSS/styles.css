@@ -135,6 +135,15 @@ main {
 }
 
 .features {
+  background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 20px 0;
+}
+
+.features {
     text-align: left;
 }
 
