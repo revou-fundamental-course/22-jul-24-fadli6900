@@ -141,6 +141,7 @@ main {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 20px 0;
+    font-size: medium;
 }
 
 .features {
