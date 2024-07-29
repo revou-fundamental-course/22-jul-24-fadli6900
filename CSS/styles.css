@@ -198,86 +198,57 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: crimson;
   color: white;
   height: 100px;
   width: 100%;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.package-list {
+
+.packages-section {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.package-card {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid crimson;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
   padding: 20px;
-  font-family: "Roboto", sans-serif;
-  width: auto;
-  height: 500px;
-  width: 100%;
-}
-
-.row-container-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  height: 250px;
-  width: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.row-container-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-  height: 250px;
-  width: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.package-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-  width: 20px;
-  padding: 10px;
-  background-color: rgb(197, 195, 195);
-  border-radius: 50%;
-}
-
-.package-icon img {
-  height: 20px;
-  width: 20px;
-}
-
-.package-item {
-  display: flex;
-  border: 1px solid;
-  flex-direction: row;
-  justify-content: center;
   width: 200px;
-  font-size: 12px;
-  height: 100px;
+  text-align: center;
 }
 
-.item-title {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  border: 1px solid;
-  height: 30px;
-  padding: 20px;
+.package-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.package-card h3 {
+  margin: 10px 0;
+}
+
+.package-card p {
+  margin: 0;
+}
+
+.package-card {
+  width: 90%;
+  margin: 10px auto;
 }
 
 .closing-argument {
