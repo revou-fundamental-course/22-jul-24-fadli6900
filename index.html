@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FADLI ZUHRI PUTRA ASHARY</title>
     <link rel="stylesheet" href="CSS\styles.css" />
+    <script src="JS\script.js"></script>
 
     <style>
       * {
@@ -67,7 +68,28 @@
                   <p>Mahasiswa</p>
               </div>
           </figcaption>
+     
+          <div class="contact">
+            <form id="contact-form">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" placeholder="First and last name">
+              
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com">
+              
+              <label for="interest">What are you interested in?</label>
+              <select id="interest" name="interest">
+                <option value="">Select option</option>
+                <option value="sales">Sales</option>
+                <option value="support">Support</option>
+              </select>
+              
+              <button type="submit" id="submit-btn">SEND</button>
+            </form>
+          </div>
+
       </section>
+
       <section class="features">
           <p>sekilas tentang saya</p>
           <ol>
@@ -77,38 +99,65 @@
           </ol>
       </section>
 
-      <header>
-        <h1>Pemain bola idola saya</h1>
-    </header>
-    <section class="packages">
-        <div class="package">
-            <h2>R.Lewandowski</h2>
-            <img src="Asset/raven.gif" alt="">
+      <div class="package-container">
+        <div class="package-title"><h1>Our Package</h1></div>
+        <div class="package-list">
+            <div class="row-container-1">
+                <div class="package-item">
+                    <div class="package-icon"><img src="Asset/1.gif"></div>
+                    <div><h3 class="item-title"> Ronaldo </h3>
+                        <div class="item-content">
+                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="package-item">
+                    <div class="package-icon"><img src="Asset/2.gif"></div>
+                    <div><h3 class="item-title"> Japan </h3>
+                        <div class="item-content">
+                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="package-item">
+                    <div class="package-icon"><img src="Asset/raven.gif"></div>
+                    <div><h3 class="item-title"> Australia </h3>
+                        <div class="item-content">
+                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row-container-2">
+                <div class="package-item">
+                    <div class="package-icon"><img src="Asset/raven.gif"></div>
+                    <div><h3 class="item-title"> Bali </h3>
+                        <div class="item-content">
+                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="package-item">
+                    <div class="package-icon"><img src="Asset/raven.gif"></div>
+                    <div><h3 class="item-title"> Japan </h3>
+                        <div class="item-content">
+                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="package-item">
+                    <div class="package-icon"><img src="Asset/raven.gif"></div>
+                    <div><h3 class="item-title"> Australia </h3>
+                        <div class="item-content">
+                            <p> Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik </p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        <div class="package">
-            <h2>L.Messi</h2>
-            <img src="Asset/raven.gif" alt="">
-        </div>
-
-        <div class="package">
-            <h2>C.Ronaldo</h2>
-            <img src="Asset/raven.gif" alt="">
-        </div>
-
-        <div class="package">
-            <h2>Neymar</h2>
-            <img src="Asset/raven.gif" alt="">
-        </div>
-
-        <div class="package">
-            <h2>mbappe</h2>
-            <img src="Asset/raven.gif" alt="">
-        </div>
-
-        <div class="package">
-            <h2>benzema</h2>
-            <img src="Asset/raven.gif" alt="">
-        </div>
+    </div>
 
     </section>
     <section class="closing-argument">
