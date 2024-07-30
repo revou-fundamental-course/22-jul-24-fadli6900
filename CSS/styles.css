@@ -222,7 +222,7 @@ button:hover {
 
 .package-card {
   background-color: white;
-  border: 1px solid crimson;
+  border: 1px solid black;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
