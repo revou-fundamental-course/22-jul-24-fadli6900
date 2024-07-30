@@ -26,8 +26,19 @@
             black 100px 101px
           );
       }
-    </style>
 
+      @media only screen and (max-width:600px) {
+        .wrapper {
+          flex-direction: column;
+        }
+        .navigation{
+          width: 100%;
+          flex-direction: column;
+        }
+      }
+
+
+    </style>
   </head>
   
   <body>
@@ -94,7 +105,7 @@
       </section>
 
       <section class="features">
-          <p>sekilas tentang saya</p>
+          <p>Sekilas Tentang Saya</p>
           <ol>
               <li>halo perkenalkan nama saya Fadli Zuhri Putra Ashary</li>
               <li> saya mengambil jurusan S1 sistem informasi</li>
