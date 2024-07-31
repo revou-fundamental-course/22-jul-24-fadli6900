@@ -1,78 +1,107 @@
 /*ini css*/
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 30px;
-  padding: 15px;
-  width: 105%;
-  height: 100%;
-  background-color: black;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+:root {
+  --color-1: black;
+  --text-color: white;
+  --accent-color: crimson;
 }
 
-.brand {
+ {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 12pt;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  height: 60px;
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  font-size: 20px;
-  padding: 15px;
-  text-transform: capitalize;
-}
-
-.firstname {
-  color: white;
-  font-weight: 700;
-}
-.lastname {
-  color: crimson;
-  padding-left: 4px;
-}
-
-.navigation {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.navigation > li {
-  list-style-type: none;
-  padding: 15px;
-}
-
-.navigation > li > a {
-  color: white;
-  font-size: 20px;
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  text-transform: capitalize;
+  color: var(--text-color);
+}
+nav a:hover {
+  background-color: var(--accent-color);
+}
+nav a:hover {
+  background-color: var(--accent-color);
 }
 
-.navigation > li > a:hover {
-  color: crimson;
-  transition: all 0.3s ease-in-out;
-}
-
-.navigation > li > img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-}
-
-.navigation > li > img:hover {
-  width: 70px;
-  height: 70px;
-  border-radius: 70px;
-  transition: all 0.3s ease-in-out;
-}
-
-.active {
-  background-color: crimson;
-  color: white;
+nav .home-link {
+  margin-right: auto;
   padding: 15px;
 }
 
-.active:hover {
-  color: white !important;
+nav svg {
+  fill: var(--text-color);
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 250px;
+
+    background-color: var(--color-1);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-out;
+  }
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30 px;
+    justify-content: center;
+  }
+
+  .open-sidebar-button,
+  .close-sidebar-button {
+    padding: 20px;
+    display: block;
+  }
+  #sidebar-active:checked ~ .links-container {
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
 }
 
 header {
@@ -128,6 +157,13 @@ main {
   margin-bottom: 10px;
 }
 
+.author-info img:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 70px;
+  transition: all 0.3s ease-in-out;
+}
+
 .features {
   background-color: white;
   padding: 20px;
@@ -162,7 +198,7 @@ main {
 }
 
 form {
-  background-color: #f9f9f9;
+  background-color: white;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -226,13 +262,13 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  padding: 20px;
-  width: 200px;
+  padding: 10px;
+  width: 100%;
   text-align: center;
 }
 
 .package-card img {
-  width: 100px;
+  width: 75px;
   height: auto;
   margin-bottom: 10px;
   border-radius: 10px;
