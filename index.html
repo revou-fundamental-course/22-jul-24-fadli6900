@@ -26,7 +26,26 @@
             black 100px 101px
           );
       }
-
+      
+      .slider-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            background: #000;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
+        }
 
     </style>
   </head>
@@ -64,7 +83,41 @@
 
         <section class="main">
           <figure class="main-asset">
-              <img src="Asset/1.gif" alt="">
+            <div class="slider-container">
+              <div class="slides">
+                  <div class="slide" style="background-color: yellow;">
+                      <h1>Slide 1</h1>
+                      <p>Content for Slide 1</p>
+                  </div>
+                  <div class="slide" style="background-color: orange;">
+                      <h1>Slide 2</h1>
+                      <p>Content for Slide 2</p>
+                      <img src="Asset/raven.gif" alt="">
+                  </div>
+                  <div class="slide" style="background-color: red;">
+                      <h1>Slide 3</h1>
+                      <p>Content for Slide 3</p>
+                  </div>
+              </div>
+          </div>
+          
+          <script>
+              let slideIndex = 0;
+              showSlides();
+          
+              function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("slide");
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 5000); // Change image every 2 seconds
+              }
+          </script>
+          
           </figure>
           <blockquote class="main-quote">
               "project Portofolio"
