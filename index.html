@@ -13,7 +13,7 @@
         padding: 0;
         box-sizing: border-box;
       }
-      body {
+      body { 
         background-color: crimson;
         background-image: repeating-linear-gradient(
             to right,
@@ -65,11 +65,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
           </label>
 
-          <a class="home-link" href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Login</a>
+          <a class="home-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a>
           <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M80-140v-320h320v320H80Zm80-80h160v-160H160v160Zm60-340 220-360 220 360H220Zm142-80h156l-78-126-78 126ZM863-42 757-148q-21 14-45.5 21t-51.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T813-204L919-98l-56 56ZM660-200q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM320-380Zm120-260Z"/></svg></a>
 
         </div>
       </nav>
@@ -86,17 +86,13 @@
             <div class="slider-container">
               <div class="slides">
                   <div class="slide" style="background-color: yellow;">
-                      <h1>Slide 1</h1>
-                      <p>Content for Slide 1</p>
+                    <img src="Asset/3.gif" alt="">
                   </div>
                   <div class="slide" style="background-color: orange;">
-                      <h1>Slide 2</h1>
-                      <p>Content for Slide 2</p>
-                      <img src="Asset/raven.gif" alt="">
+                      <img src="Asset/1.gif" alt="">
                   </div>
                   <div class="slide" style="background-color: red;">
-                      <h1>Slide 3</h1>
-                      <p>Content for Slide 3</p>
+                    <img src="Asset/2.gif" alt="">
                   </div>
               </div>
           </div>
@@ -114,7 +110,7 @@
                   slideIndex++;
                   if (slideIndex > slides.length) {slideIndex = 1}    
                   slides[slideIndex-1].style.display = "block";  
-                  setTimeout(showSlides, 5000); // Change image every 2 seconds
+                  setTimeout(showSlides, 3000); // Change image every 3 seconds
               }
           </script>
           
@@ -201,7 +197,6 @@
         </div>
       </div>
 
-    </section>
     <section class="closing-argument">
         <h2>Terimakasih telah mengunjungi</h2>
         <p> website saya </p>
@@ -212,8 +207,12 @@
         <p>2024</p>
     </footer>
 
-        </form>
-      </section>
-    </main>
+    <a href="#home" class="button">Home</a>
+    <div style="height: 1000px;">jangan di klik</div>
+    
+    <div id="home">
+      <video width="600" controls>
+        <source src="Asset\p" type="video/mp4">
+    </div>
   </body>
 </html>
